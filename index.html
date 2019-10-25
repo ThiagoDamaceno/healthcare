@@ -6,13 +6,40 @@
 
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 
+        <link rel="stylesheet" href="css/meu-estilo.css">
+
         <title>Hello, world!</title>
     </head>
     <body>
-        <h2>Hello World</h2>
+        <div id="login" class="login">
+            <h1 id="h1-login" class="text-center">Login</h1>
+
+            <div>
+                <form action="" class="">
+                    <div class="div-input">
+                        <input id="input-email" type="text" onkeyup="inputEmailFocus()">
+                        <span id="placeholder-input-email" class="meu-placeholder">E-mail</span>
+                    </div>
+                    <div class="div-input">
+                        <input id="input-senha" type="password" onkeyup="inputSenhaFocus()">
+                        <span id="placeholder-input-senha" class="meu-placeholder">Senha</span>
+                    </div>
+
+                    <button class="meu-botao bg-success">Entrar</button>
+                </form>
+ 
+                <div class="text-center">
+                    <span class="link-cadastre-se ">
+                        Não possui uma conta? <a href="/html/cadastre-se.html">Cadastre-se</a>
+                    </span>
+                </div>      
+            </div>
+        </div>
 
         <script src="js/jquery/jquery-3.1.1.slim.js"></script>
         <script src="js/pooper/pooper.js"></script>
         <script src="js/bootstrap/bootstrap.min.js"></script>
+
+        <script src="js/login.js"></script>
     </body>
 </html>

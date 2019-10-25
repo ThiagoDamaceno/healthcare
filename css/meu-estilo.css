@@ -1,0 +1,75 @@
+body {
+    height: 100%;
+    background-color: white;
+}
+
+.minha-borda {
+    border: 1px solid blue !important;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.div-input input{
+    border: none;
+    background: none;
+    width: 100%;
+    color: #333;
+    height: 40px;
+    padding: 0 5px;
+    outline: none;
+
+    transform: translateY(65%);
+    text-indent: 2px;
+}
+
+.div-input {
+    border-bottom: rgb(206, 206, 206) solid 2px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.meu-placeholder{
+    z-index: -1;
+    position: relative;
+    left: 2%;
+    top: -5px;
+    color: #adadad;
+    transition: .5s;
+}
+
+.meu-placeholder-after {
+    z-index: -1;
+    position: relative;
+    left: 2%;
+    top: -40px;
+    color: #333;
+    transition: .5s;
+    font-size: 18px;
+}
+
+.meu-botao {
+    margin-top: 40px;
+    height: 40px;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.link-cadastre-se {
+    position: relative;
+    top: 100px;
+    margin-top: 40px;
+}
+
+#h1-login {
+    position: relative;
+    top: -50px;
+    font-weight: 800;
+}
