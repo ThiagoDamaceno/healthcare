@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/meu-estilo.css">
+
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+
+        <style>
+            #icon-ferido {
+                padding: 40px;
+                font-size: 80px;
+            }
+            #icon-medic{
+                font-size: 50px;
+                padding: 40px;
+            }
+
+            #h1-cadastre-se {
+                font-weight: 800;
+            }
+
+            .w-45{
+                width: 45%;
+            }
+
+            #placeholder-input-cpf {
+                left: 5%;
+            }
+
+            #placeholder-input-rg {
+                left: 5%;
+            }
+
+            #div-input-rg {
+                margin-left: 8%;
+            }
+            
+            
+        </style>
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <div id="cadastre-se" class="minha-area">
+            <h1 id="h1-cadastre-se" class="text-center">Cadastre-se</h1>
+
+            <div class="text-center">
+                <i class="fas fa-user-md" id="icon-medic"></i>
+                <i class="fas fa-user-injured text-info" id="icon-ferido"></i>
+            </div>
+
+            <form action="">
+                    <div class="div-input">
+                        <input id="input-nome" type="text" onkeyup="inputNomeFocus()">
+                        <span id="placeholder-input-nome" class="meu-placeholder">Nome Completo</span>
+                    </div>
+                    <div class="div-input w-45 d-inline-block">
+                        <input id="input-cpf" type="text" onkeyup="inputCpfFocus()">
+                        <span id="placeholder-input-cpf" class="meu-placeholder">Cpf</span>
+                    </div>
+                    <div id="div-input-rg" class="div-input w-45 d-inline-block">
+                        <input id="input-rg" type="text" onkeyup="inputRgFocus()">
+                        <span id="placeholder-input-rg" class="meu-placeholder">Rg</span>
+                    </div>
+            </form>
+            
+        </div>
+       
+
+        <script src="js/jquery/jquery-3.1.1.slim.js"></script>
+        <script src="js/pooper/pooper.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+
+        <script src="js/forms.js"></script>
+    </body>
+</html>
