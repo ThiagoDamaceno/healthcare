@@ -11,16 +11,32 @@
         <link rel="stylesheet" href="fontawesome/css/all.css">
 
         <style>
-            #icon-ferido {
-                padding: 40px;
-                font-size: 80px;
+            #cadastre-se {
+                width: 80%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
             }
-            #icon-medic{
+
+            .div-icon-inativo {
+                position: relative;
+                top: 30px;
+            }
+            .icon-inativo {
+                padding: 40px 40px 10px 40px;
                 font-size: 50px;
-                padding: 40px;
+                color: #333;
+                transition: 0.8s;
+            }
+            .icon-ativo {
+                font-size: 80px;
+                padding: 40px 40px 10px 40px;
+                color: rgb(2, 117, 216);
+                transition: 0.8s;
             }
 
             #h1-cadastre-se {
+                margin-top: 30px;
                 font-weight: 800;
             }
 
@@ -32,42 +48,168 @@
                 left: 5%;
             }
 
-            #placeholder-input-rg {
+            #placeholder-input-cep {
                 left: 5%;
             }
 
-            #div-input-rg {
+            #div-input-cep {
                 margin-left: 8%;
             }
-            
+
+            #placeholder-input-logradouro {
+                left: 5%;
+            }
+
+            #placeholder-input-numero {
+                left: 5%;
+            }
+
+            #placeholder-input-senha {
+                left: 5%;
+            }
+
+            #div-input-numero {
+                margin-left: 8%;
+            }
+
+            .div-input-cadastre-se {
+                border-bottom: rgb(206, 206, 206) solid 2px;
+                margin: 0;
+                position: relative;
+            }
+
+            .div-input-cadastre-se input{
+                border: none;
+                background: none;
+                width: 100%;
+                color: #333;
+                height: 40px;
+                padding: 0 5px;
+                outline: none;
+
+                transform: translateY(65%);
+                text-indent: 2px;
+            }
+
+            #label-enviar-arquivo {
+                margin-top: 30px;
+            }
+
+            .meu-placeholder{
+                z-index: -1;
+                position: relative;
+                left: 2%;
+                top: -5px;
+                color: #adadad;
+                transition: .5s;
+            }
+
+            .meu-placeholder-after {
+                z-index: -1;
+                position: relative;
+                left: 2%;
+                top: -33px;
+                color: #333;
+                transition: .5s;
+            }
+
             
         </style>
         <title>Hello, world!</title>
     </head>
     <body>
-        <div id="cadastre-se" class="minha-area">
+        <div id="cadastre-se" class="">
             <h1 id="h1-cadastre-se" class="text-center">Cadastre-se</h1>
 
-            <div class="text-center">
-                <i class="fas fa-user-md" id="icon-medic"></i>
-                <i class="fas fa-user-injured text-info" id="icon-ferido"></i>
+            <div class="text-center row">
+                <div id="div-icon-paciente" class="col-6" onclick="toIconPaciente()">
+                    <i class="fas fa-user-md icon-ativo" id="icon-paciente"></i>
+                    <p>Paciente</p>
+                </div>
+                <div id="div-icon-profissional" class="col-6" onclick="toIconProfissional()">
+                    <i class="fas fa-user-injured icon-inativo" id="icon-profissional"></i>
+                    <p>Profissional</p>
+                </div>
+                
             </div>
 
-            <form action="">
-                    <div class="div-input">
+            <form action="" id="form-cadastre-se-paciente">
+                    <div class="div-input-cadastre-se">
                         <input id="input-nome" type="text" onkeyup="inputNomeFocus()">
                         <span id="placeholder-input-nome" class="meu-placeholder">Nome Completo</span>
                     </div>
-                    <div class="div-input w-45 d-inline-block">
+                    <div class="div-input-cadastre-se w-45 d-inline-block">
                         <input id="input-cpf" type="text" onkeyup="inputCpfFocus()">
                         <span id="placeholder-input-cpf" class="meu-placeholder">Cpf</span>
                     </div>
-                    <div id="div-input-rg" class="div-input w-45 d-inline-block">
-                        <input id="input-rg" type="text" onkeyup="inputRgFocus()">
-                        <span id="placeholder-input-rg" class="meu-placeholder">Rg</span>
+                    <div id="div-input-cep" class="div-input-cadastre-se w-45 d-inline-block">
+                        <input id="input-cep" type="text" onkeyup="inputCepFocus()">
+                        <span id="placeholder-input-cep" class="meu-placeholder">Cep</span>
                     </div>
+
+                    <div id="div-input-logradouro" class="div-input-cadastre-se w-45 d-inline-block">
+                        <input id="input-logradouro" type="text" onkeyup="inputLogradouroFocus()">
+                        <span id="placeholder-input-logradouro" class="meu-placeholder">Logradouro</span>
+                    </div>
+
+                    <div id="div-input-numero" class="div-input-cadastre-se w-45 d-inline-block">
+                        <input id="input-numero" type="text" onkeyup="inputNumeroFocus()">
+                        <span id="placeholder-input-numero" class="meu-placeholder">Numero</span>
+                    </div>
+
+                    <div class="div-input-cadastre-se">
+                        <input id="input-email" type="text" onkeyup="inputEmailFocus()">
+                        <span id="placeholder-input-email" class="meu-placeholder">E-mail</span>
+                    </div>
+                    <div class="div-input-cadastre-se">
+                        <input id="input-senha" type="password" onkeyup="inputSenhaFocus()">
+                        <span id="placeholder-input-senha" class="meu-placeholder" style="left: 2%;">Senha</span>
+                    </div>
+
+                    <button class="meu-botao bg-success">Cadastrar-se</button>
             </form>
-            
+
+
+            <form action="" id="form-cadastre-se-profissional" style="display: none;">
+                    <div class="div-input-cadastre-se">
+                        <input id="input-nome2" type="text" onkeyup="inputNomeFocus2()">
+                        <span id="placeholder-input-nome2" class="meu-placeholder">Nome Completo</span>
+                    </div>
+                    <div class="div-input-cadastre-se w-45 d-inline-block">
+                        <input id="input-cpf2" type="text" onkeyup="inputCpfFocus2()">
+                        <span id="placeholder-input-cpf2" class="meu-placeholder">Cpf</span>
+                    </div>
+                    <div id="div-input-cep" class="div-input-cadastre-se w-45 d-inline-block">
+                        <input id="input-cep2" type="text" onkeyup="inputCepFocus2()">
+                        <span id="placeholder-input-cep2" class="meu-placeholder">Cep</span>
+                    </div>
+
+                    <div id="div-input-logradouro" class="div-input-cadastre-se w-45 d-inline-block">
+                        <input id="input-logradouro2" type="text" onkeyup="inputLogradouroFocus2()">
+                        <span id="placeholder-input-logradouro2" class="meu-placeholder">Logradouro</span>
+                    </div>
+
+                    <div id="div-input-numero" class="div-input-cadastre-se w-45 d-inline-block">
+                        <input id="input-numero2" type="text" onkeyup="inputNumeroFocus2()">
+                        <span id="placeholder-input-numero2" class="meu-placeholder">Numero</span>
+                    </div>
+
+                    <div class="div-input-cadastre-se">
+                        <input id="input-email2" type="text" onkeyup="inputEmailFocus2()">
+                        <span id="placeholder-input-email2" class="meu-placeholder">E-mail</span>
+                    </div>
+                    <div class="div-input-cadastre-se w-45 d-inline-block">
+                        <input id="input-senha2" type="password" onkeyup="inputSenhaFocus2()">
+                        <span id="placeholder-input-senha2" class="meu-placeholder">Senha</span>
+                    </div>
+
+                    <div class="d-inline-block w-45" style="position:relative; left: 8%;">
+                        <label id="label-enviar-arquivo" for="input-arquivo" class="btn btn-primary w-100">Enviar currículo</label>
+                        <input type="file" class="btn btn-info d-none" id="input-arquivo">
+                    </div>
+                    
+                    <button class="meu-botao bg-success">Cadastrar-se</button>
+            </form>
         </div>
        
 
@@ -76,5 +218,6 @@
         <script src="js/bootstrap/bootstrap.min.js"></script>
 
         <script src="js/forms.js"></script>
+        <script src="js/cadastrar.js"></script>
     </body>
 </html>
