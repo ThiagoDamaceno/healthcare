@@ -1,0 +1,8 @@
+Opções concluídas:
+    Curativos;
+    Idosos;
+    Palativos;
+    Traqueostomia;
+    Acamado;
+    Pós Operatório;
+    
