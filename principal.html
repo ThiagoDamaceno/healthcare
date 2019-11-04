@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/meu-estilo.css">
+
+        <title>Hello, world!</title>
+
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Knewave" />
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        
+        <style>
+            body {
+                background: rgb(245, 245, 245);
+            }
+            #cabecalho {
+                background-color: rgb(255, 255, 255);
+                border-bottom: 2px solid #dddddd;
+            }
+            #cabecalho #span-health {
+                font-family: "Knewave";
+                font-size: 32px;
+                font-weight: 300;
+                color: #0275d8;
+                margin-left: 20px;
+                position: relative;
+                top: 18px;
+            }
+            #span-care {
+                color: #013059 !important;
+                margin: 0 !important;
+            }
+            #icon-user {
+                font-size: 60px;
+                font-weight: 100;
+                padding: 10px;
+                margin-right: 10px;
+            }
+
+            .meu-card {
+                width: 96%;
+                margin: auto;
+                border-radius: 10px;
+                border: 1px solid #dddddd;
+                background-color: white;
+            }
+            .margin-left-card {
+                margin-left: 7%;
+            }
+
+            .img-card {
+                margin-top: 20px;
+            }
+
+            .titulo-card {
+                width: 90%;
+                font-size: 20px;
+                font-weight: 600;
+                margin-top: 20px;
+            }   
+
+            .icon-plus {
+                position: relative;
+                left: 2px;
+                font-size: 14px;
+            }
+
+            .divisor {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                height: 1px;
+                border-top: 1px solid rgb(219, 219, 219);
+            }
+
+            .icon-video {
+                position: relative;
+                top: 1px;
+                left: -2px;
+            }
+
+            .precos-itens-none {
+                margin-top: 10px;
+                display: none;
+            }
+            .precos-itens-ativo {
+                margin-top: 10px;
+                display: block;
+            }
+
+            .lista-precos {
+                width: 92%;
+            }            
+        </style>
+    </head>
+    <body>
+        <div id="conteudo">
+            <div id="cabecalho" class="clearfix">
+                <span id="span-health" >Health<span id="span-care">Care</span></span>
+                <i id="icon-user" class="far fa-user-circle float-right text-primary"></i>
+            </div>
+    
+            <div id="conteudo" class="mt-3">
+                <div class="meu-card">
+                    <div class="d-flex justify-content-center img-card">
+                        <img src="img/curativos.jpg" width="85%" alt="">
+                    </div>
+                    
+                    <h4 class="titulo-card margin-left-card">Troca de curativos</h4>
+                
+                    <div class="divisor"></div>
+
+                    <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-curativos')">Preços <i class="fas fa-plus icon-plus"></i></button>
+                    <div id="precos-curativos" class="margin-left-card precos-itens-none">
+                        <ul class="list-group lista-precos">
+                            <li class="list-group-item">1° Consulta: R$ 150,00</li>
+                            <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
+                            <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
+                        </ul>
+                    </div>
+
+                    <div class="divisor"></div>
+
+                    <div class="text-center">
+                        <button class="btn btn-primary">1° Consulta</button>
+                        
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pacotes
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">5 consultas</a>
+                                <a class="dropdown-item" href="#">10 consultas</a>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    </div>
+
+                    <div class="mb-3"></div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+
+        <script src="js/jquery/jquery-3.1.1.slim.js"></script>
+        <script src="js/pooper/pooper.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="js/showPrecos.js"></script>
+
+    </body>
+</html>
