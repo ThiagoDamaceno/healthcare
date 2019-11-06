@@ -8,8 +8,6 @@
         App Health Care
     </description>
 
-    <preference name="Fullscreen" value="true" />
-
     <preference name="orientation" value="portrait" />
-
+    
 </widget>
