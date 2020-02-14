@@ -1,0 +1,120 @@
+#cadastre-se {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+}
+
+.div-icon-inativo {
+        position: relative;
+        top: 30px;
+}
+.icon-inativo {
+        padding: 40px 40px 10px 40px;
+        font-size: 50px;
+        color: #333;
+        transition: 0.8s;
+}
+.icon-ativo {
+        font-size: 80px;
+        padding: 40px 40px 10px 40px;
+        color: rgb(2, 117, 216);
+        transition: 0.8s;
+}
+
+#h1-cadastre-se {
+        margin-top: 30px;
+        font-weight: 800;
+}
+
+.w-45{
+        width: 45%;
+}
+
+#placeholder-input-cpf {
+        left: 5%;
+}
+            
+#placeholder-input-cpf2 {
+	left: 5%;
+}
+
+#placeholder-input-cep {
+       left: 5%;
+}
+
+#placeholder-input-cep2 {
+       left: 5%;
+}
+
+#div-input-cep {
+       margin-left: 8%;
+}
+
+#placeholder-input-logradouro {
+       left: 5%;
+}
+
+#placeholder-input-logradouro2 {
+       left: 5%;
+}
+
+#placeholder-input-numero {
+       left: 5%;
+}
+            
+#placeholder-input-numero2 {
+       left: 5%;
+}
+
+#placeholder-input-senha {
+       left: 5%;
+}
+
+#placeholder-input-senha2 {
+       left: 5%;
+}
+
+#div-input-numero {
+       margin-left: 8%;
+}
+
+.div-input-cadastre-se {
+       border-bottom: rgb(206, 206, 206) solid 2px;
+       margin: 0;
+       position: relative;
+}
+.div-input-cadastre-se input{
+        border: none;
+        background: none;
+        width: 100%;
+        color: #333;
+        height: 40px;
+        padding: 0 5px;
+        outline: none;
+
+        transform: translateY(65%);
+        text-indent: 2px;
+}
+
+#label-enviar-arquivo {
+        margin-top: 30px;
+}
+
+.meu-placeholder{
+        z-index: -1;
+        position: relative;
+        left: 2%;
+        top: -5px;
+        color: #adadad;
+        transition: .5s;
+}
+
+.meu-placeholder-after {
+        z-index: -1;
+        position: relative;
+        left: 2%;
+        top: -33px;
+        color: #333;
+	transition: .5s;
+}
