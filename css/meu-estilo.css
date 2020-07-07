@@ -2,7 +2,9 @@ body {
     height: 100%;
     background-color: white;
 }
-
+body {
+    background-color: rgb(245, 245, 245);
+}
 .minha-borda {
     border: 1px solid blue !important;
 }
@@ -13,6 +15,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
+    max-width: 450px;
 }
 
 .div-input input{

@@ -15,351 +15,353 @@
         <link rel="stylesheet" href="fontawesome/css/all.css">
           
     </head>
-    <body>
-        <div id="cabecalho" class="clearfix">
-            <span id="span-health" >Health<span id="span-care">Care</span></span>
-            <i id="icon-user" class="far fa-user-circle float-right text-primary"></i>
-        </div>
-
-        <div id="conteudo" class="mt-3">
-
-            <!--CARD AMAMENTACAO-->
-            <div class="meu-card">
-                <div class="d-flex justify-content-center img-card">
-                    <img src="img/amamentacao.jpg" width="85%" alt="">
-                </div>
-                
-                <h4 class="titulo-card margin-left-card">Amamentação</h4>
-            
-                <div class="divisor"></div>
-
-                <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-amamentacao')">Preços <i class="fas fa-plus icon-plus"></i></button>
-                <div id="precos-amamentacao" class="margin-left-card precos-itens-none">
-                    <ul class="list-group lista-precos">
-                        <li class="list-group-item">1° Consulta: R$ 150,00</li>
-                        <li class="list-group-item">Pacote 5 consultas: R$ 750,00</li>
-                        <li class="list-group-item">Pacote 10 consultas: R$ 1.425,00</li>
-                    </ul>
-                </div>
-
-                <div class="divisor"></div>
-
-                <div class="text-center mb-3">
-                    <button class="btn btn-primary">1° Consulta</button>
-                    
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Pacotes
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">5 consultas</a>
-                            <a class="dropdown-item" href="#">10 consultas</a>
-                        </div>
-                    </div>
-
-                    <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
-                </div>
-
+    <body class="d-flex justify-content-center">
+        <div id="main-container">     
+            <div id="cabecalho" class="clearfix">
+                <span id="span-health" >Health<span id="span-care">Care</span></span>
+                <i id="icon-user" class="far fa-user-circle float-right text-primary"></i>
             </div>
-            <!--FIM CARD AMAMENTACAO-->
-
-            <!--CARD LASERTERAPIA-->
-            <div class="meu-card">
-                <div class="text-center">
-                    <p class="mt-3 " style="font-size: 12px;">* Exclusivo para quem realiza consutoria de amamentação.</p>
-                </div>
-                    
-
-                <div class="d-flex justify-content-center img-card">
-                    <img src="img/laserterapia.png" width="85%" alt="">
-                </div>
-                
-                <h4 class="titulo-card margin-left-card">Laserterapia (Lactantes)</h4>
-            
-                <div class="divisor"></div>
-
-                <div class="mb-3 d-flex">
-                    <button class="btn btn-primary mr-auto ml-3">Sessão (R$ 125,00)</button>
-
-                    <button class="btn btn-primary ml-auto mr-3"><i class="fas fa-video icon-video"></i> Chamada</button>
-                </div>
-
-            </div>
-            <!--FIM CARD LASERTERAPIA-->
-
-            <!--CARD CURATIVOS-->
-            <div class="meu-card">
-                <div class="d-flex justify-content-center img-card">
-                    <img src="img/curativos.jpg" width="85%" alt="">
-                </div>
-                
-                <h4 class="titulo-card margin-left-card">Troca de curativos</h4>
-            
-                <div class="divisor"></div>
-
-                <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-curativos')">Preços <i class="fas fa-plus icon-plus"></i></button>
-                <div id="precos-curativos" class="margin-left-card precos-itens-none">
-                    <ul class="list-group lista-precos">
-                        <li class="list-group-item">1° Consulta: R$ 150,00</li>
-                        <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
-                        <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
-                    </ul>
-                </div>
-
-                <div class="divisor"></div>
-
-                <div class="text-center mb-3">
-                    <button class="btn btn-primary">1° Consulta</button>
-                    
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Pacotes
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">5 consultas</a>
-                            <a class="dropdown-item" href="#">10 consultas</a>
-                        </div>
-                    </div>
-
-                    <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
-                </div>
-
-            </div>
-            <!--FIM CARD CURATIVOS-->
-
-            <!--CARD IDOSOS-->
-            <div class="meu-card">
-                <div class="d-flex justify-content-center img-card">
-                    <img src="img/idosos.jpg" width="85%" alt="">
-                </div>
-                
-                <h4 class="titulo-card margin-left-card">Cuidados com idosos</h4>
-            
-                <div class="divisor"></div>
-
-                <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-idosos')">Preços <i class="fas fa-plus icon-plus"></i></button>
-                <div id="precos-idosos" class="margin-left-card precos-itens-none">
-                    <ul class="list-group lista-precos">
-                        <li class="list-group-item">1° Consulta: R$ 150,00</li>
-                        <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
-                        <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
-                    </ul>
-                </div>
-
-                <div class="divisor"></div>
-
-                <div class="text-center mb-3">
-                    <button class="btn btn-primary">1° Consulta</button>
-                    
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Pacotes
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">5 consultas</a>
-                            <a class="dropdown-item" href="#">10 consultas</a>
-                        </div>
-                    </div>
-
-                    <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
-                </div>
-            </div>
-            <!--FIM CARD IDOSOS-->
-
-            <!--CARD CUIDADOS PALATIVOS-->
-            <div class="meu-card">
-                <div class="d-flex justify-content-center img-card">
-                    <img src="img/palativos.jpg" width="85%" alt="">
-                </div>
-                
-                <h4 class="titulo-card margin-left-card">Cuidados Palativos</h4>
-            
-                <div class="divisor"></div>
-
-                <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-palativos')">Preços <i class="fas fa-plus icon-plus"></i></button>
-                <div id="precos-palativos" class="margin-left-card precos-itens-none">
-                    <ul class="list-group lista-precos">
-                        <li class="list-group-item">1° Consulta: R$ 150,00</li>
-                        <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
-                        <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
-                    </ul>
-                </div>
-
-                <div class="divisor"></div>
-
-                <div class="text-center mb-3">
-                    <button class="btn btn-primary">1° Consulta</button>
-                    
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Pacotes
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">5 consultas</a>
-                            <a class="dropdown-item" href="#">10 consultas</a>
-                        </div>
-                    </div>
-
-                    <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
-                </div>
-            </div>
-            <!--FIM CARD CUIDADOS PALATIVOS-->
-
-            <!-- CARD TRAQUEOSTOMIA-->
-            <div class="meu-card">
+    
+            <div id="conteudo" class="mt-3">
+    
+                <!--CARD AMAMENTACAO-->
+                <div class="meu-card">
                     <div class="d-flex justify-content-center img-card">
-                    <img src="img/traqueostomia.jpg" width="85%" alt="">
-                </div>
-                
-                <h4 class="titulo-card margin-left-card">Cuidados com Traqueostomia</h4>
-            
-                <div class="divisor"></div>
-
-                <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-traqueostomia')">Preços <i class="fas fa-plus icon-plus"></i></button>
-                <div id="precos-traqueostomia" class="margin-left-card precos-itens-none">
-                    <ul class="list-group lista-precos">
-                        <li class="list-group-item">1° Consulta: R$ 150,00</li>
-                        <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
-                        <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
-                    </ul>
-                </div>
-
-                <div class="divisor"></div>
-
-                <div class="text-center mb-3">
-                    <button class="btn btn-primary">1° Consulta</button>
-                    
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Pacotes
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">5 consultas</a>
-                            <a class="dropdown-item" href="#">10 consultas</a>
-                        </div>
+                        <img src="img/amamentacao.jpg" width="85%" alt="">
                     </div>
-
-                    <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    
+                    <h4 class="titulo-card margin-left-card">Amamentação</h4>
+                
+                    <div class="divisor"></div>
+    
+                    <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-amamentacao')">Preços <i class="fas fa-plus icon-plus"></i></button>
+                    <div id="precos-amamentacao" class="margin-left-card precos-itens-none">
+                        <ul class="list-group lista-precos">
+                            <li class="list-group-item">1° Consulta: R$ 150,00</li>
+                            <li class="list-group-item">Pacote 5 consultas: R$ 750,00</li>
+                            <li class="list-group-item">Pacote 10 consultas: R$ 1.425,00</li>
+                        </ul>
+                    </div>
+    
+                    <div class="divisor"></div>
+    
+                    <div class="text-center mb-3">
+                        <button class="btn btn-primary">1° Consulta</button>
+                        
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pacotes
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">5 consultas</a>
+                                <a class="dropdown-item" href="#">10 consultas</a>
+                            </div>
+                        </div>
+    
+                        <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    </div>
+    
                 </div>
-            </div>
-            <!--FIM CARD TRAQUEOSTOMIA-->
-            
-            <!--CARD ACAMADOS-->
-            <div class="meu-card">
+                <!--FIM CARD AMAMENTACAO-->
+    
+                <!--CARD LASERTERAPIA-->
+                <div class="meu-card">
+                    <div class="text-center">
+                        <p class="mt-3 " style="font-size: 12px;">* Exclusivo para quem realiza consutoria de amamentação.</p>
+                    </div>
+                        
+    
                     <div class="d-flex justify-content-center img-card">
-                    <img src="img/acamado.jpg" width="85%" alt="">
-                </div>
-                
-                <h4 class="titulo-card margin-left-card">Cuidado ao Paciente Acamado</h4>
-            
-                <div class="divisor"></div>
-
-                <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-acamado')">Preços <i class="fas fa-plus icon-plus"></i></button>
-                <div id="precos-acamado" class="margin-left-card precos-itens-none">
-                    <ul class="list-group lista-precos">
-                        <li class="list-group-item">1° Consulta: R$ 150,00</li>
-                        <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
-                        <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
-                    </ul>
-                </div>
-
-                <div class="divisor"></div>
-
-                <div class="text-center mb-3">
-                    <button class="btn btn-primary">1° Consulta</button>
-                    
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Pacotes
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">5 consultas</a>
-                            <a class="dropdown-item" href="#">10 consultas</a>
-                        </div>
+                        <img src="img/laserterapia.png" width="85%" alt="">
                     </div>
-
-                    <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    
+                    <h4 class="titulo-card margin-left-card">Laserterapia (Lactantes)</h4>
+                
+                    <div class="divisor"></div>
+    
+                    <div class="mb-3 d-flex">
+                        <button class="btn btn-primary mr-auto ml-3">Sessão (R$ 125,00)</button>
+    
+                        <button class="btn btn-primary ml-auto mr-3"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    </div>
+    
                 </div>
-            </div>
-            <!--FIM CARD ACAMADOS-->
-
-            <!--CARD PÓS-CIRURGICOS-->
-            <div class="meu-card">
+                <!--FIM CARD LASERTERAPIA-->
+    
+                <!--CARD CURATIVOS-->
+                <div class="meu-card">
                     <div class="d-flex justify-content-center img-card">
-                    <img src="img/pos-operatorio.jpg" width="85%" alt="">
-                </div>
-                
-                <h4 class="titulo-card margin-left-card">Cuidados Pós-cirúrgicos</h4>
-            
-                <div class="divisor"></div>
-
-                <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-pos-cirurgico')">Preços <i class="fas fa-plus icon-plus"></i></button>
-                <div id="precos-pos-cirurgico" class="margin-left-card precos-itens-none">
-                    <ul class="list-group lista-precos">
-                        <li class="list-group-item">1° Consulta: R$ 150,00</li>
-                        <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
-                        <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
-                    </ul>
-                </div>
-
-                <div class="divisor"></div>
-
-                <div class="text-center mb-3">
-                    <button class="btn btn-primary">1° Consulta</button>
-                    
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Pacotes
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">5 consultas</a>
-                            <a class="dropdown-item" href="#">10 consultas</a>
-                        </div>
+                        <img src="img/curativos.jpg" width="85%" alt="">
                     </div>
-
-                    <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    
+                    <h4 class="titulo-card margin-left-card">Troca de curativos</h4>
+                
+                    <div class="divisor"></div>
+    
+                    <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-curativos')">Preços <i class="fas fa-plus icon-plus"></i></button>
+                    <div id="precos-curativos" class="margin-left-card precos-itens-none">
+                        <ul class="list-group lista-precos">
+                            <li class="list-group-item">1° Consulta: R$ 150,00</li>
+                            <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
+                            <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
+                        </ul>
+                    </div>
+    
+                    <div class="divisor"></div>
+    
+                    <div class="text-center mb-3">
+                        <button class="btn btn-primary">1° Consulta</button>
+                        
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pacotes
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">5 consultas</a>
+                                <a class="dropdown-item" href="#">10 consultas</a>
+                            </div>
+                        </div>
+    
+                        <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    </div>
+    
                 </div>
-            </div>
-            <!--FIM CARD PÓS-CIRURGICOS-->
-
-            <!--CARD SONDA-->
-            <div class="meu-card">
+                <!--FIM CARD CURATIVOS-->
+    
+                <!--CARD IDOSOS-->
+                <div class="meu-card">
                     <div class="d-flex justify-content-center img-card">
-                    <img src="img/sonda.jpg" width="85%" alt="">
-                </div>
-                
-                <h4 class="titulo-card margin-left-card">Cuidados com Sondas</h4>
-            
-                <div class="divisor"></div>
-
-                <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-sonda')">Preços <i class="fas fa-plus icon-plus"></i></button>
-                <div id="precos-sonda" class="margin-left-card precos-itens-none">
-                    <ul class="list-group lista-precos">
-                        <li class="list-group-item">1° Consulta: R$ 150,00</li>
-                        <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
-                        <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
-                    </ul>
-                </div>
-
-                <div class="divisor"></div>
-
-                <div class="text-center mb-3">
-                    <button class="btn btn-primary">1° Consulta</button>
-                    
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Pacotes
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">5 consultas</a>
-                            <a class="dropdown-item" href="#">10 consultas</a>
-                        </div>
+                        <img src="img/idosos.jpg" width="85%" alt="">
                     </div>
-
-                    <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    
+                    <h4 class="titulo-card margin-left-card">Cuidados com idosos</h4>
+                
+                    <div class="divisor"></div>
+    
+                    <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-idosos')">Preços <i class="fas fa-plus icon-plus"></i></button>
+                    <div id="precos-idosos" class="margin-left-card precos-itens-none">
+                        <ul class="list-group lista-precos">
+                            <li class="list-group-item">1° Consulta: R$ 150,00</li>
+                            <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
+                            <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
+                        </ul>
+                    </div>
+    
+                    <div class="divisor"></div>
+    
+                    <div class="text-center mb-3">
+                        <button class="btn btn-primary">1° Consulta</button>
+                        
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pacotes
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">5 consultas</a>
+                                <a class="dropdown-item" href="#">10 consultas</a>
+                            </div>
+                        </div>
+    
+                        <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    </div>
                 </div>
+                <!--FIM CARD IDOSOS-->
+    
+                <!--CARD CUIDADOS PALATIVOS-->
+                <div class="meu-card">
+                    <div class="d-flex justify-content-center img-card">
+                        <img src="img/palativos.jpg" width="85%" alt="">
+                    </div>
+                    
+                    <h4 class="titulo-card margin-left-card">Cuidados Palativos</h4>
+                
+                    <div class="divisor"></div>
+    
+                    <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-palativos')">Preços <i class="fas fa-plus icon-plus"></i></button>
+                    <div id="precos-palativos" class="margin-left-card precos-itens-none">
+                        <ul class="list-group lista-precos">
+                            <li class="list-group-item">1° Consulta: R$ 150,00</li>
+                            <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
+                            <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
+                        </ul>
+                    </div>
+    
+                    <div class="divisor"></div>
+    
+                    <div class="text-center mb-3">
+                        <button class="btn btn-primary">1° Consulta</button>
+                        
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pacotes
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">5 consultas</a>
+                                <a class="dropdown-item" href="#">10 consultas</a>
+                            </div>
+                        </div>
+    
+                        <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    </div>
+                </div>
+                <!--FIM CARD CUIDADOS PALATIVOS-->
+    
+                <!-- CARD TRAQUEOSTOMIA-->
+                <div class="meu-card">
+                        <div class="d-flex justify-content-center img-card">
+                        <img src="img/traqueostomia.jpg" width="85%" alt="">
+                    </div>
+                    
+                    <h4 class="titulo-card margin-left-card">Cuidados com Traqueostomia</h4>
+                
+                    <div class="divisor"></div>
+    
+                    <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-traqueostomia')">Preços <i class="fas fa-plus icon-plus"></i></button>
+                    <div id="precos-traqueostomia" class="margin-left-card precos-itens-none">
+                        <ul class="list-group lista-precos">
+                            <li class="list-group-item">1° Consulta: R$ 150,00</li>
+                            <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
+                            <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
+                        </ul>
+                    </div>
+    
+                    <div class="divisor"></div>
+    
+                    <div class="text-center mb-3">
+                        <button class="btn btn-primary">1° Consulta</button>
+                        
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pacotes
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">5 consultas</a>
+                                <a class="dropdown-item" href="#">10 consultas</a>
+                            </div>
+                        </div>
+    
+                        <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    </div>
+                </div>
+                <!--FIM CARD TRAQUEOSTOMIA-->
+                
+                <!--CARD ACAMADOS-->
+                <div class="meu-card">
+                        <div class="d-flex justify-content-center img-card">
+                        <img src="img/acamado.jpg" width="85%" alt="">
+                    </div>
+                    
+                    <h4 class="titulo-card margin-left-card">Cuidado ao Paciente Acamado</h4>
+                
+                    <div class="divisor"></div>
+    
+                    <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-acamado')">Preços <i class="fas fa-plus icon-plus"></i></button>
+                    <div id="precos-acamado" class="margin-left-card precos-itens-none">
+                        <ul class="list-group lista-precos">
+                            <li class="list-group-item">1° Consulta: R$ 150,00</li>
+                            <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
+                            <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
+                        </ul>
+                    </div>
+    
+                    <div class="divisor"></div>
+    
+                    <div class="text-center mb-3">
+                        <button class="btn btn-primary">1° Consulta</button>
+                        
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pacotes
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">5 consultas</a>
+                                <a class="dropdown-item" href="#">10 consultas</a>
+                            </div>
+                        </div>
+    
+                        <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    </div>
+                </div>
+                <!--FIM CARD ACAMADOS-->
+    
+                <!--CARD PÓS-CIRURGICOS-->
+                <div class="meu-card">
+                        <div class="d-flex justify-content-center img-card">
+                        <img src="img/pos-operatorio.jpg" width="85%" alt="">
+                    </div>
+                    
+                    <h4 class="titulo-card margin-left-card">Cuidados Pós-cirúrgicos</h4>
+                
+                    <div class="divisor"></div>
+    
+                    <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-pos-cirurgico')">Preços <i class="fas fa-plus icon-plus"></i></button>
+                    <div id="precos-pos-cirurgico" class="margin-left-card precos-itens-none">
+                        <ul class="list-group lista-precos">
+                            <li class="list-group-item">1° Consulta: R$ 150,00</li>
+                            <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
+                            <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
+                        </ul>
+                    </div>
+    
+                    <div class="divisor"></div>
+    
+                    <div class="text-center mb-3">
+                        <button class="btn btn-primary">1° Consulta</button>
+                        
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pacotes
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">5 consultas</a>
+                                <a class="dropdown-item" href="#">10 consultas</a>
+                            </div>
+                        </div>
+    
+                        <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    </div>
+                </div>
+                <!--FIM CARD PÓS-CIRURGICOS-->
+    
+                <!--CARD SONDA-->
+                <div class="meu-card">
+                        <div class="d-flex justify-content-center img-card">
+                        <img src="img/sonda.jpg" width="85%" alt="">
+                    </div>
+                    
+                    <h4 class="titulo-card margin-left-card">Cuidados com Sondas</h4>
+                
+                    <div class="divisor"></div>
+    
+                    <button class="btn btn-outline-primary margin-left-card" onclick="showPrecos('precos-sonda')">Preços <i class="fas fa-plus icon-plus"></i></button>
+                    <div id="precos-sonda" class="margin-left-card precos-itens-none">
+                        <ul class="list-group lista-precos">
+                            <li class="list-group-item">1° Consulta: R$ 150,00</li>
+                            <li class="list-group-item">Pacote 5 consultas: R$ 500,00</li>
+                            <li class="list-group-item">Pacote 10 consultas: R$ 950,00</li>
+                        </ul>
+                    </div>
+    
+                    <div class="divisor"></div>
+    
+                    <div class="text-center mb-3">
+                        <button class="btn btn-primary">1° Consulta</button>
+                        
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pacotes
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">5 consultas</a>
+                                <a class="dropdown-item" href="#">10 consultas</a>
+                            </div>
+                        </div>
+    
+                        <button class="btn btn-primary"><i class="fas fa-video icon-video"></i> Chamada</button>
+                    </div>
+                </div>
+                <!--FIM CARD SONDA-->
             </div>
-            <!--FIM CARD SONDA-->
         </div>
 
         

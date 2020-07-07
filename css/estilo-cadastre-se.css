@@ -1,5 +1,6 @@
 #cadastre-se {
         width: 80%;
+        max-width: 450px;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
